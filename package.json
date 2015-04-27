@@ -1,0 +1,20 @@
+{
+  "author": "Mark C Allen <mark@markcallen.com>",
+  "name": "ivector",
+  "description": "I Vector",
+  "version": "0.1.0",
+  "homepage": "http://www.markcallen.com/",
+  "main": "app",
+  "engines": {
+    "node": "0.10.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/markcallen/ivector.git"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "optionalDependencies": {}
+}
