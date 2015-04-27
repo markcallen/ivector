@@ -47,5 +47,9 @@ module.exports = {
     point2.y = point.y + Math.sin(angle*Math.PI/180) * DISTANCE;
 
     return point2;
+  },
+
+  getDistance: function(point1, point2) {
+    return Math.sqrt( (point2.x-=point1.x)*point2.x + (point2.y-=point1.y)*point2.y );
   }
 }
