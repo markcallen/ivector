@@ -38,5 +38,14 @@ module.exports = {
     }
     // if line1 and line2 are segments, they intersect if both of the above are true
     return result;
+  },
+
+  getLine: function(point, angle) {
+    var DISTANCE = Math.abs(point.x * 0.1);
+    var point2 = {};
+    point2.x = point.x + Math.cos(angle*Math.PI/180) * DISTANCE;
+    point2.y = point.y + Math.sin(angle*Math.PI/180) * DISTANCE;
+
+    return point2;
   }
 }
