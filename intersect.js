@@ -40,11 +40,13 @@ module.exports = {
     return result;
   },
 
-  getLine: function(point, angle) {
-    var DISTANCE = Math.abs(point.x * 0.1);
+  getLine: function(point, angle, distance) {
+    if (distance == null) {
+      distance = Math.abs(point.x * 0.1);
+    }
     var point2 = {};
-    point2.x = point.x + Math.cos(angle*Math.PI/180) * DISTANCE;
-    point2.y = point.y + Math.sin(angle*Math.PI/180) * DISTANCE;
+    point2.x = point.x + Math.cos(angle*Math.PI/180) * distance;
+    point2.y = point.y + Math.sin(angle*Math.PI/180) * distance;
 
     return point2;
   },
